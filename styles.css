@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#home {
+    background: linear-gradient(to right, #1146f3, #7bdffe);
+    color: #faf9f9;
+    padding: 5rem 0;
+}
+
+#about {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: #fff;
+    padding: 1rem 0;
+}
+#education {
+    background: #f4f4f4;
+    color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.education-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+    margin: 0.5rem 0;
+}
+
+#projects {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    color: #fff;
+    padding: 5rem 0;
+}
+
+#contact {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: #fff;
+    padding: 5rem 0;
+}
+
+#image-section {
+    margin: 2rem 0;
+}
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project {
+    margin: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 0.5rem 0;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .project, form input, form textarea {
+        width: 90%;
+    }
+
+    .circular-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, section, footer {
+        padding: 1rem;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .circular-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}
